@@ -41,9 +41,44 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btHomem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                CalculoIMC();
+                opHomem();
+            }
+        });
+
     }
+    public double CalculoIMC(){
+        Double altura = 2 * Double.parseDouble(edAltura.getText().toString());
+        Double peso = Double.parseDouble(edPeso.getText().toString());
+        Double resultado = altura/peso;
+
+        return resultado;
+
+    }
+
+    private void opHomem(){
+        double imc = CalculoIMC();
+        String resul;
+        if(imc <= 19.1) {
+            resul = txResultado.getText().toString();
+            txResultado.setText("Você está abaixo do peso");
+        } else if () {
+            
+        }
+
+    }
+
+    private void opMulher(){
+
+    }
+
     private void Limpar(){
-        String limpar = " ".getText().toString();
-        txResultado.setText(limpar);
+        String limpar = txResultado.getText().toString();
+        txResultado.setText(" ");
     }
+
+
 }
