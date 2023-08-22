@@ -18,9 +18,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Informe a Altura"
         android:textSize="15dp"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp"
+        android:text="Informe a Altura"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -32,9 +32,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Informe o Peso"
         android:textSize="15dp"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp"
+        android:text="Informe o Peso"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -72,8 +72,8 @@
             android:layout_weight="1"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
-            mar
-
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
             android:text="Mulher"
         
 </LinearLayout>
