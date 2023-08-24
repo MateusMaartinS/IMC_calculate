@@ -62,11 +62,17 @@ public class MainActivity extends AppCompatActivity {
     private void opHomem(){
         double imc = CalculoIMC();
         String resul;
-        if(imc <= 19.1) {
+        if(imc > 31.1) {
             resul = txResultado.getText().toString();
             txResultado.setText("Você está abaixo do peso");
-        } else if () {
-            
+        } else if (imc > 27.8 && imc < 31.1) {
+            txResultado.setText("Você está no peso normal");
+        } else if (imc > 26.4 && imc < 27.8 ){
+            txResultado.setText("Você está um pouco acima do peso");
+        } else if (imc > 20.7 && imc < 26.4){
+            txResultado.setText("Você está acima do peso");
+        } if (imc > 20.7){
+            txResultado.setText("Você está obeso");
         }
 
     }
